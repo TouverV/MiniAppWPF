@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp7.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="248" Width="497" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Логин:" Margin="0,0,10,0" />
+        <TextBox Grid.Row="1" x:Name="loginTextBox" Margin="0,0,0,82" Grid.RowSpan="2" />
+
+        <Label Grid.Row="2" Content="Пароль:" Margin="0,19,10,6" />
+        <PasswordBox Grid.Row="2" x:Name="passwordBox" Margin="0,45,0,38" />
+
+        <Button Grid.Row="2" Content="Войти" Click="LoginButton_Click" Margin="0,115,0,-46" />
+    </Grid>
+</Window>
